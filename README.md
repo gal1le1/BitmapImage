@@ -44,7 +44,7 @@ To be able to compile program user should have a C compiler installed to his sys
 
 To compile the program use this:
 ```bash
-gcc main.c bmp.c convert.c morse.c -std=gnu99
+$ gcc main.c bmp.c convert.c morse.c -std=gnu99
 ```
 Note: Do not use -std=c99. It can cause errors
 
@@ -54,7 +54,7 @@ If you compile the program with the command that we provide you will get "a.out"
 
 To start the program you can use this:
 ```bash
-./a.out sign.bmp --text hello --date --pos 600,200 --o modsign.bmp
+$ ./a.out sign.bmp --text hello --date --pos 600,200 --o modsign.bmp
 ```
 In the code that I provide above, “sign.bmp” is the source file that you want to watermark. “modsign.bmp” is the name of the output file that you want.
 
@@ -62,11 +62,11 @@ NOTE: In case of giving wrong file (not .bmp file) program will show error and a
 
 If you don’t provide text and date it will give error and exit. You should provide one of them:
 ```bash
-./a.out sign.bmp --text hello --pos 600,200 --o modsign.bmp
+$ ./a.out sign.bmp --text hello --pos 600,200 --o modsign.bmp
 ```
 or
 ```bash
-./a.out sign.bmp --date --pos 600,200 --o modsign.bmp
+$ ./a.out sign.bmp --date --pos 600,200 --o modsign.bmp
 ```
 Also if there is no color code provided by the user the default code will be ABCEDF (please use real color codes not some garbage values).
 
